@@ -9,13 +9,14 @@ foreach (get_pages() as $page) {
 }
 
 if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                   
-            <a class="post-item-title-link" href="<?php the_permalink(); ?>">
+            <div class="post-item">
+            <a href="<?php the_permalink(); ?>">
                 <div class="post-item-title"><?php the_title(); ?></div>
                 <?php if ( has_post_thumbnail() ) {
                     the_post_thumbnail( 'thumbnail' );
                 } ?>
             </a>
+            </div>
 
 <?php endwhile; endif; ?>
 
