@@ -11,13 +11,11 @@
 
     <div id="image-gallery">
         <?php  $galleries = get_post_galleries_images( $post ); 
-        console_log($galleries);
         ?> 
     
         <?php if ( get_post_gallery() ) : 
             $gallery = get_post_gallery( get_the_ID(), false );
             $gids = explode(",", $gallery['ids']);
-            console_log($gids);
             $i = 0;
             foreach( $gallery['src'] as $src ) : 
         ?>

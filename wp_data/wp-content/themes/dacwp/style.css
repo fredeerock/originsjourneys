@@ -6,3 +6,144 @@ Description: Theme for Origins and Journeys DAC show.
 Version: 1.0
 Tags: education, entertainment, portfolio, dac, art
 */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+}
+
+html{
+    color: #fff;
+    background-color: #000022;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 13px;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+#primary {
+    text-align: center;
+    margin-top: 86px;
+}
+
+header {
+    margin-top: 74px;
+    text-align: center;
+
+}
+
+#titles {
+    display: inline-block;
+}
+
+header h1 {
+    display: inline-block;
+}
+
+header h2 {
+    text-align: right;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    /* margin: 10px; */
+    /* padding: 20px; */
+}
+
+.post-item-title-link{
+    position: relative;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.post-item-title{
+    position: absolute;
+    left: 50%;
+    bottom: 2px;
+    transform: translate(-50%, -50%);
+    /* margin: 0 auto; */
+}
+
+.page-item{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #fff;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* barlow-300 - latin */
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 300;
+    src: url('./fonts/barlow-v1-latin-300.eot'); /* IE9 Compat Modes */
+    src: local('Barlow Light'), local('Barlow-Light'),
+         url('./fonts/barlow-v1-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/barlow-v1-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/barlow-v1-latin-300.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/barlow-v1-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/barlow-v1-latin-300.svg#Barlow') format('svg'); /* Legacy iOS */
+  }
+  /* barlow-regular - latin */
+  @font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/barlow-v1-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Barlow Regular'), local('Barlow-Regular'),
+         url('./fonts/barlow-v1-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/barlow-v1-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/barlow-v1-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/barlow-v1-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/barlow-v1-latin-regular.svg#Barlow') format('svg'); /* Legacy iOS */
+  }
+  /* barlow-500italic - latin */
+  @font-face {
+    font-family: 'Barlow';
+    font-style: italic;
+    font-weight: 500;
+    src: url('./fonts/barlow-v1-latin-500italic.eot'); /* IE9 Compat Modes */
+    src: local('Barlow Medium Italic'), local('Barlow-MediumItalic'),
+         url('./fonts/barlow-v1-latin-500italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/barlow-v1-latin-500italic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/barlow-v1-latin-500italic.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/barlow-v1-latin-500italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/barlow-v1-latin-500italic.svg#Barlow') format('svg'); /* Legacy iOS */
+  }
+  /* barlow-700 - latin */
+  @font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/barlow-v1-latin-700.eot'); /* IE9 Compat Modes */
+    src: local('Barlow Bold'), local('Barlow-Bold'),
+         url('./fonts/barlow-v1-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/barlow-v1-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/barlow-v1-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/barlow-v1-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/barlow-v1-latin-700.svg#Barlow') format('svg'); /* Legacy iOS */
+  }
+
