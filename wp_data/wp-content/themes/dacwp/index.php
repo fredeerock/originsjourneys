@@ -2,12 +2,34 @@
 
 <div id="primary">
 
-<!-- START the Loop. -->
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php 
+//   $pages = get_pages(); 
+//   foreach ( $pages as $page ) {
+//   	$option = '<option value="' . get_page_link( $page->ID ) . '">';
+// 	$option .= $page->post_title;
+// 	$option .= '</option>';
+// 	echo $option;
+//   }
 
-    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+
+
+ ?>
+
+<!-- START the Loop. -->
+<ul>
+
+<?php
+foreach (get_pages() as $page) {
+    echo '<li> <a href="' . get_page_link( $page->ID ) . '">' . $page->post_title . '</a> </li>';
+}
+
+if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+    <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 
 <?php endwhile; endif; ?>
+
+</ul>
 <!-- END the Loop. -->
 
 </div><!-- #primary -->
