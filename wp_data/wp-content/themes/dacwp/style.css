@@ -135,7 +135,7 @@ header h2 {
 
 footer {
     height: 80px;
-    /* position: fixed; */
+    position: fixed;
     text-align: center;
     bottom: 61px;
 } */
