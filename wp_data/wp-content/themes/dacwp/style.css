@@ -10,12 +10,25 @@ Tags: education, entertainment, portfolio, dac, art
 * {
     margin: 0;
     padding: 0;
+    /* height: 100%; */
     font-family: 'Barlow', sans-serif;
 }
+
+/* canvas {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -9999;
+} */
 
 html{
     color: #fff;
     background-color: #000022;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 h1 {
@@ -55,9 +68,19 @@ header h2 {
 }
 
 #primary {
-    text-align: center;
-    margin-top: 86px;
+    margin-top: 66px;
     text-shadow: 0px 2px 4px #000;
+    text-align: center;
+}
+
+#primary div{
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.post-item:hover{
+    box-shadow: 10px 10px #fff;
 }
 
 .post-item{
@@ -67,24 +90,27 @@ header h2 {
     font-weight: 500;
     font-style: italic;
     font-size: 12px;
-    margin: 0 auto;
-
+    box-shadow: 10px 10px #1B75BC;
+    /* margin: 0 auto; */
 }
 
 .post-item-title{
     position: absolute;
-    bottom: 10px;
-    text-align: center;
+    bottom: 15px;
+    text-align: left;
+
 }
 
-.page-item{
+.page-item {
     position: relative;
     width: 150px;
     height: 150px;
     border: 1px solid #1B75BC;
     font-weight: 500;
-    font-size: 14px;
-    margin: 0 auto;
+    font-size: 18px;
+    box-shadow: 10px 10px #fff;
+
+    /* margin: 0 auto; */
 }
 
 .page-item a{
@@ -95,6 +121,25 @@ header h2 {
     text-align: left;
     /* transform: translate(-50%, -50%); */
 }
+
+.page-item a:hover{
+    text-decoration: underline;
+    /* box-shadow: 10px 10px #1B75BC; */
+}
+
+/* #wrapper{
+    min-height: 100%;
+
+    margin-bottom: -80px;
+}
+
+footer {
+    height: 80px;
+    /* position: fixed; */
+    text-align: center;
+    bottom: 61px;
+} */
+
 
 /* barlow-300 - latin */
 @font-face {
