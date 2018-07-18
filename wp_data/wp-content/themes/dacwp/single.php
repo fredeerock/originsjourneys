@@ -10,13 +10,23 @@
     <h5 id="gallery-heading">Media</h5>
 
     <div id="image-gallery">
+        <?php  $galleries = get_post_galleries_images( $post ); 
+        console_log($galleries);
+        ?> 
+    
         <?php if ( get_post_gallery() ) : 
             $gallery = get_post_gallery( get_the_ID(), false );
+            $gids = explode(",", $gallery['ids']);
+            console_log($gids);
+            $i = 0;
+            foreach( $gallery['src'] as $src ) : 
+        ?>
 
-            foreach( $gallery['src'] as $src ) : ?>
-            <img src="<?php echo $src; ?>" class="my-custom-class" alt="Gallery image" />
+        <a href="<?php echo wp_get_attachment_image_src($gids[$i], "large")[0];?>"> 
+            <img src="<?php echo $src; ?>" class="gallery-image" />
+        </a> 
 
-        <?php endforeach; endif; ?>
+            <?php $i++; endforeach; endif; ?>
     </div>
 
     <h5 id="description-heading">Work Description</h5>

@@ -19,13 +19,23 @@
 <ul>
 
 <?php
+
 foreach (get_pages() as $page) {
     echo '<li> <a href="' . get_page_link( $page->ID ) . '">' . $page->post_title . '</a> </li>';
 }
 
 if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-    <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+    <a href="<?php the_permalink(); ?>">
+        <li>       
+            <?php the_title(); ?>
+            <ul><li>
+                <?php if ( has_post_thumbnail() ) {
+                    the_post_thumbnail( 'thumbnail' );
+                } ?>
+            </li></ul>
+        </li>
+    </a>
 
 <?php endwhile; endif; ?>
 
