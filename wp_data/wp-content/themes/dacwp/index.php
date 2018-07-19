@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div id="primary">
-
+<main id="index">
 <?php
 
 foreach (get_pages() as $page) {
@@ -20,7 +20,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <?php endwhile; endif; ?>
 
-
+</main>
 </div><!-- #primary -->
 
 <?php get_footer(); ?>
