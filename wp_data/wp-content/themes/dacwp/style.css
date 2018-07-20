@@ -96,7 +96,7 @@ header h2 {
 #primary {
     margin-top: 66px;
     text-shadow: 0px 2px 4px #000;
-    width: 850px;
+    max-width: 850px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -104,7 +104,6 @@ header h2 {
 }
 
 #primary div{
-    display: inline-block;
     margin-right: 20px;
     margin-top: 20px;
 }
@@ -114,6 +113,7 @@ header h2 {
 }
 
 .post-item{
+    display: inline-block;
     position: relative;
     width: 150px;
     height: 150px;
@@ -130,6 +130,7 @@ header h2 {
 }
 
 .page-item {
+    display: inline-block;
     position: relative;
     width: 150px;
     height: 150px;
@@ -152,7 +153,7 @@ header h2 {
 }
 
 footer{
-    width: 511px;
+    max-width: 511px;
     left: 0;
     right: 0;
     margin-left: auto;
