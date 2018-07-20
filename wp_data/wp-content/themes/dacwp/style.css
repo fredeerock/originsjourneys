@@ -43,6 +43,8 @@ ul, li{
     list-style: none;
 }
 
+
+
 h1 {
     font-weight: 700;
     font-size: 60px;
@@ -55,17 +57,50 @@ h2 {
     font-size: 13px;
 }
 
-h3 {
-
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.4;
+	margin: 0 0 0.75em;
+	padding: 1.5em 0 0;
 }
 
-h4 {
-
+h3{
+    font-weight: 500;
+    font-style: italic;
+    font-size: 26px;
 }
 
-h5 {
-
+h4{
+    font-weight: 300;
+    font-size: 18px;
 }
+
+h5{
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+#post-title{
+    margin-bottom: 0;
+    padding-top: 0;
+}
+
+#post-author{
+    padding: 0;
+    margin: 0;
+}
+
+#image-gallery img{
+    margin-right: 10px;
+}
+
+/* #image-gallery{
+    background-color: #fff;
+
+} */
 
 a{
     color: #fff;
@@ -81,9 +116,9 @@ header {
     display: inline-block;
 }
 
-header h1 {
+/* header h1 {
     display: inline-block;
-}
+} */
 
 header h2 {
     text-align: right;
@@ -91,6 +126,8 @@ header h2 {
 
 #single {
     margin-top: 60px;
+    border: 1px solid #1B75BC;
+    padding: 20px;
 }
 
 #primary {
@@ -103,7 +140,11 @@ header h2 {
     margin-right: auto;
 }
 
-#primary div{
+.nav-item{
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    height: 150px;
     margin-right: 20px;
     margin-top: 20px;
 }
@@ -113,10 +154,6 @@ header h2 {
 }
 
 .post-item{
-    display: inline-block;
-    position: relative;
-    width: 150px;
-    height: 150px;
     font-weight: 500;
     font-style: italic;
     font-size: 12px;
@@ -127,13 +164,10 @@ header h2 {
     position: absolute;
     bottom: 15px;
     text-align: left;
+    margin-left: 5px;
 }
 
 .page-item {
-    display: inline-block;
-    position: relative;
-    width: 150px;
-    height: 150px;
     border: 1px solid #1B75BC;
     font-weight: 500;
     font-size: 18px;
