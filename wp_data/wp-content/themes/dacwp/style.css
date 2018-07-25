@@ -7,20 +7,6 @@ Version: 1.0
 Tags: education, entertainment, portfolio, dac, art
 */
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-article,
-aside,
-footer,
-header,
-nav,
-section {
-	display: block;
-}
-
 /* canvas {
     width: 100vw;
     height: 100vh;
@@ -39,11 +25,13 @@ html{
     font-family: 'Barlow', sans-serif;
 }
 
+body {
+    margin: 0;
+}
+
 ul, li{
     list-style: none;
 }
-
-
 
 h1 {
     font-weight: 700;
@@ -95,6 +83,8 @@ h5{
 
 #image-gallery img{
     margin-right: 10px;
+    margin-top: 10px;
+    border: 1px white solid;
 }
 
 /* #image-gallery{
@@ -116,12 +106,13 @@ header {
     display: inline-block;
 }
 
-/* header h1 {
-    display: inline-block;
-} */
+header h1 {
+    margin: 0;
+}
 
 header h2 {
     text-align: right;
+    margin: 0;
 }
 
 #single {
@@ -197,6 +188,32 @@ footer{
 
 footer img{
     margin-right: 20px;
+}
+
+.gallery-image-large{
+    display: none;
+}
+
+.gallery-image-large-span img {
+    /* border: none !important; */
+
+}
+
+.gallery-image-large:target {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-bottom: -50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    max-height: 95%;
+    max-width: 95%;
+    box-shadow: 0px 0px 500px 100px black;
+}
+
+.gallery-image-large-span:target {
+    display: none;
 }
 
 /* barlow-300 - latin */

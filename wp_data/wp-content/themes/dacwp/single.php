@@ -23,9 +23,19 @@
             foreach( $gallery['src'] as $src ) : 
         ?>
 
-        <a href="<?php echo wp_get_attachment_image_src($gids[$i], "large")[0];?>"> 
+        <!-- <a href="<?php echo wp_get_attachment_image_src($gids[$i], "large")[0];?>"> 
+            <img src="<?php echo $src; ?>" class="gallery-image" />
+        </a>  -->
+
+        <a href="#gallery-image-<?php echo $gids[$i];?>"> 
             <img src="<?php echo $src; ?>" class="gallery-image" />
         </a> 
+
+        <a href="#close-<?php echo $gids[$i];?>"> 
+            <span class="gallery-image-large-span" id="close-<?php echo $gids[$i];?>">
+                <img src="<?php echo wp_get_attachment_image_src($gids[$i], "large")[0];?>" class="gallery-image-large" id="gallery-image-<?php echo $gids[$i];?>"/>
+            </span>
+        </a>
 
             <?php $i++; endforeach; endif; ?>
     </div>
@@ -40,7 +50,8 @@
 
 <?php endwhile;?>
 <!-- END the Loop. -->
-            </main>
-            </div>
+
+</main>
+</div> <!-- #primary -->
 
 <?php get_footer(); ?>
