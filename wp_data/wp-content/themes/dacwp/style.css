@@ -194,10 +194,9 @@ footer img{
     display: none;
 }
 
-.gallery-image-large-span img {
-    /* border: none !important; */
-
-}
+/* .gallery-image-large-span img {
+    border: none !important;
+} */
 
 .gallery-image-large:target {
     display: block;

@@ -5,6 +5,8 @@ services:
     image: mysql:5.7
     volumes:
       - ./db_data:/var/lib/mysql
+    ports:
+      - 8036:3306
     environment:
       MYSQL_ROOT_PASSWORD: example
   wordpress:
