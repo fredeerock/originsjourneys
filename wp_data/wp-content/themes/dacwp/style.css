@@ -7,22 +7,13 @@ Version: 1.0
 Tags: education, entertainment, portfolio, dac, art
 */
 
-/* canvas {
-    width: 100vw;
-    height: 100vh;
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -9999;
-} */
-
 html{
     color: #fff;
-    background-color: #000022;
     margin-right: 15px;
     margin-left: 15px;
     font-family: 'Barlow', sans-serif;
+    background:  #000022 fixed url("img/background.svg");
+
 }
 
 body {
@@ -57,12 +48,12 @@ h6 {
 h3{
     font-weight: 500;
     font-style: italic;
-    font-size: 26px;
+    font-size: 28px;
 }
 
 h4{
     font-weight: 300;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 h5{
@@ -86,11 +77,6 @@ h5{
     margin-top: 10px;
     border: 1px white solid;
 }
-
-/* #image-gallery{
-    background-color: #fff;
-
-} */
 
 a{
     color: #fff;
@@ -123,13 +109,18 @@ header h2 {
 
 #primary {
     margin-top: 66px;
-    text-shadow: 0px 2px 4px #000;
+    text-shadow: 2px 2px 2px #000;
     max-width: 850px;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
 }
+
+/* main{
+    display: block;
+    margin: 0 auto;
+} */
 
 .nav-item{
     display: inline-block;
@@ -147,7 +138,7 @@ header h2 {
 .post-item{
     font-weight: 500;
     font-style: italic;
-    font-size: 12px;
+    font-size: 14px;
     box-shadow: 10px 10px #1B75BC;
 }
 
@@ -156,6 +147,7 @@ header h2 {
     bottom: 15px;
     text-align: left;
     margin-left: 5px;
+    /* text-shadow: 2px 2px 1px #000, 0px 0px 0px #000, ; */
 }
 
 .page-item {
@@ -214,6 +206,68 @@ footer img{
 .gallery-image-large-span:target {
     display: none;
 }
+
+/* #sq1 {
+    position: fixed;
+    top: 10%;
+    left: 20%;
+    height: 100px;
+}
+
+#lr1 {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+}
+
+#sq2 {
+    position: fixed;
+    top: 300px;
+    left: 90px;
+    height: 50px;
+}
+
+#lr2 {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 200px;
+} */
+
+/* @keyframes example {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+    50% {
+        top: 100px;
+        left: 100px;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+    }
+}
+
+.anim1{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    height: 294px;
+    width: 420px;
+    background: no-repeat url(img/lines_rect.svg);
+    animation-name: example;
+    animation-duration: 400s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+} */
+
+/* .anim2{
+    height: 500px;
+    width: 500px;
+    background: no-repeat url(img/lines_rect.png);
+} */
 
 /* barlow-300 - latin */
 @font-face {

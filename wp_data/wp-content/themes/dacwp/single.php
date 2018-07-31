@@ -44,9 +44,10 @@
 
     <?php echo apply_filters('the_content',strip_shortcodes(get_the_content())); ?>
     
-    <h5 id="bio-heading">Artist Bio</h5>    
-
-    <div id="author-description"><?php the_author_meta('description'); ?></div>
+    <?php if (strpos(get_the_content(), 'ARTIST BIO') == false) : ?> 
+        <h5 id="bio-heading">Artist Bio</h5>    
+        <div id="author-description"><?php the_author_meta('description'); ?></div>
+    <?php endif; ?>
 
 <?php endwhile;?>
 <!-- END the Loop. -->
