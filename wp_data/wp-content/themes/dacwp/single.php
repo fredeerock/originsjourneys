@@ -10,7 +10,7 @@
     
     <h4 id="post-author"><?php the_author(); ?></h4>
 
-    <h5 id="gallery-heading">Media</h5>
+    <h5 id="gallery-heading">Images</h5>
 
     <div id="image-gallery">
         <?php  $galleries = get_post_galleries_images( $post ); 
@@ -20,12 +20,9 @@
             $gallery = get_post_gallery( get_the_ID(), false );
             $gids = explode(",", $gallery['ids']);
             $i = 0;
+            console_log($gallery);
             foreach( $gallery['src'] as $src ) : 
         ?>
-
-        <!-- <a href="<?php echo wp_get_attachment_image_src($gids[$i], "large")[0];?>"> 
-            <img src="<?php echo $src; ?>" class="gallery-image" />
-        </a>  -->
 
         <a href="#gallery-image-<?php echo $gids[$i];?>"> 
             <img src="<?php echo $src; ?>" class="gallery-image" />

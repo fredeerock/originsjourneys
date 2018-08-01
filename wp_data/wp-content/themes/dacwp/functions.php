@@ -9,4 +9,10 @@ function console_log( $data ){
     echo '</script>';
   }
 
+add_filter('the_author_description', 'lb_to_auth_desc');
+
+function lb_to_auth_desc($content){
+  return nl2br($content);
+}
+
 ?>
