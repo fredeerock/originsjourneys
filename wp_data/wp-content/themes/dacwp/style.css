@@ -3,7 +3,7 @@ Theme Name: Origins + Journeys
 Author: DAC
 Author URI: http://siggrapharts.ning.com/
 Description: Theme for Origins and Journeys DAC show.
-Version: 1.01
+Version: 1.02
 Tags: education, entertainment, portfolio, dac, art
 */
 
@@ -111,9 +111,7 @@ header h2 {
 #primary {
     margin-top: 66px;
     text-shadow: 2px 2px 2px #000;
-    max-width: 850px;
-    left: 0;
-    right: 0;
+    max-width: 865px;
     margin-left: auto;
     margin-right: auto;
 }

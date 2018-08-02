@@ -8,7 +8,7 @@
 
     <h3 id="post-title"><?php the_title(); ?></h3>
     
-    <h4 id="post-author"><?php the_author(); ?></h4>
+    <h4 id="post-author"><?php the_author_link(); ?></h4>
 
     <h5 id="gallery-heading">Images</h5>
 
