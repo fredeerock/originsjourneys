@@ -2,6 +2,7 @@
 <html>
 <head>
 <link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <?php wp_head(); ?>
 </head>
 

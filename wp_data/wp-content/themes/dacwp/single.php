@@ -10,7 +10,9 @@
     
     <h4 id="post-author"><?php the_author_link(); ?></h4>
 
-    <h5 id="gallery-heading">Images</h5>
+    <?php if (strpos(get_the_content(), 'IMAGES') == false) : ?> 
+        <h5 id="gallery-heading">Images</h5>
+    <?php endif; ?>
 
     <div id="image-gallery">
         <?php  $galleries = get_post_galleries_images( $post ); 
@@ -36,9 +38,11 @@
 
             <?php $i++; endforeach; endif; ?>
     </div>
-
-    <h5 id="description-heading">Work Description</h5>
-
+    
+    <?php if (strpos(get_the_content(), 'WORK DESCRIPTION') == false) : ?> 
+        <h5 id="description-heading">Work Description</h5>
+    <?php endif; ?>
+    
     <?php echo apply_filters('the_content',strip_shortcodes(get_the_content())); ?>
     
     <?php if (strpos(get_the_content(), 'ARTIST BIO') == false) : ?> 
